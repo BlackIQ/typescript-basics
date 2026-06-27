@@ -7,6 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // - Wrong credentials
 // - Page not found
 // Unauthorized
+// Make an enum with defined variables
 var LoginError;
 (function (LoginError) {
     LoginError["Unauthorized"] = "Unauthorized";
@@ -14,6 +15,8 @@ var LoginError;
     LoginError["WrongCred"] = "Wrong Cred";
 })(LoginError || (LoginError = {}));
 const printError = (error) => {
+    // This function gets an error with type of LoginError out enum
+    // Conditions on error
     if (error == LoginError.Unauthorized) {
         console.log("You don't have access");
     }
@@ -27,6 +30,7 @@ const printError = (error) => {
         console.log("No match cases");
     }
 };
+// Test
 printError(LoginError.Unauthorized);
 printError(LoginError.NoUser);
 printError(LoginError.WrongCred);

@@ -7,6 +7,7 @@
 // - Page not found
 // Unauthorized
 
+// Make an enum with defined variables
 enum LoginError {
   Unauthorized = "Unauthorized",
   NoUser = "User not found",
@@ -14,6 +15,9 @@ enum LoginError {
 }
 
 const printError = (error: LoginError) => {
+  // This function gets an error with type of LoginError out enum
+
+  // Conditions on error
   if (error == LoginError.Unauthorized) {
     console.log("You don't have access");
   } else if (error == LoginError.NoUser) {
@@ -25,6 +29,7 @@ const printError = (error: LoginError) => {
   }
 };
 
+// Test
 printError(LoginError.Unauthorized);
 printError(LoginError.NoUser);
 printError(LoginError.WrongCred);
