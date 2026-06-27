@@ -96,14 +96,3 @@ It will generates your compiled TypeScript to JavaScript and you can run using n
 ```bash
 node dist/006-enums.js
 ```
-
-## Lessons
-
-- **001 Variables**: Variables plus type annotation.
-- **002 Functions**: Functions stricts in TypeScript.
-- **003 Interfaces**: Make an object organized.
-- **004 Unions**: One type of many types you say.
-- **005 Intersections**: Combine 2 interfaces.
-- **006 Enums**: Consume it is your dictionary.
-- **007 Generics**: My favorite part of TypeScript.
-- **008 ReadOnly**: Make a variable readonly.
