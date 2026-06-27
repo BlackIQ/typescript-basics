@@ -7,6 +7,10 @@ const Amirhossein = {
     age: 24,
     isMale: true,
     friends: ["Sina", "Kasra"],
+    sayHi(message) {
+        console.log(message);
+    },
+    canTalk: false,
 };
 // A person with Spouse
 const Beyonce = {
@@ -15,7 +19,17 @@ const Beyonce = {
     isMale: false,
     friends: ["Rihanna", "Adele", "Shakira"],
     spouse: "Jay Z",
+    sayHi(message) {
+        console.log(message);
+    },
+    canTalk: true,
 };
 console.log(Amirhossein.spouse);
 console.log(Beyonce.spouse);
+if (Beyonce.canTalk) {
+    Beyonce.sayHi("Halo!!!!!");
+}
+if (Amirhossein.canTalk) {
+    Beyonce.sayHi("Amirhossein can talk like Beyonce!");
+}
 //# sourceMappingURL=003-interfaces.js.map
