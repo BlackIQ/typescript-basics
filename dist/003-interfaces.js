@@ -1,5 +1,5 @@
 "use strict";
-// Interfaces
+// Interfaces and Types
 Object.defineProperty(exports, "__esModule", { value: true });
 // A person with out Spouse
 const Amirhossein = {
