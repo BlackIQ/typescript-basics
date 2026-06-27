@@ -1,4 +1,4 @@
-// Interfaces
+// Interfaces and Types
 
 // We make an interface like this to prevent using a wrong type of variable
 // Right now name is string, age is number and others
